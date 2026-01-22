@@ -1,32 +1,42 @@
-{                                                                             
-    "accountAssociation": {                                                     
-      "header": "",                                                             
-      "payload": "",                                                            
-      "signature": ""                                                           
-    },                                                                          
-    "miniapp": {                                                                
-      "version": "1",                                                           
-      "name": "B Zero X DeFi",                                                  
-      "homeUrl": "https://dapp.bzerox.org",                                     
-      "iconUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",          
-      "splashImageUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",   
-      "splashBackgroundColor": "#000000",                                       
-      "webhookUrl": "https://dapp.bzerox.org/api/webhook",                      
-      "subtitle": "DeFi on Base",                                               
-      "description": "B Zero X Token DeFi dApp - Swaps, Uniswap V4 positions staking, and Proof of Work Mining. Decentralized.",                                        
-      "screenshotUrls": [                                                       
-        "https://dapp.bzerox.org/images/screenshot1.png",                       
-        "https://dapp.bzerox.org/images/screenshot2.png",                       
-        "https://dapp.bzerox.org/images/screenshot3.png"                        
-      ],                                                                        
-      "primaryCategory": "finance",                                                
-      "tags": ["defi", "swap", "staking", "uniswap", "base"],                   
-      "heroImageUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",     
-      "tagline": "Swap, Stake, Earn",                                           
-      "ogTitle": "B Zero X DeFi",                                               
-      "ogDescription": "DeFi dApp with swaps, Uniswap V4 position staking and proof of work mining statistics.",                                                                    
-      "ogImageUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",       
-      "noindex": false                                                          
-    }                                                                           
-  }                                                                         
-                                                      
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjI0MjE2NTYsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHhlZjkyRThhNzdmMzhhQTA4NTY0ZTZBY0NCQTZERDhGMTM2OTQ1QTY0In0",
+    "payload": "eyJkb21haW4iOiJkYXBwLmJ6ZXJveC5vcmcifQ",
+    "signature": "fLGTpX4jypo7kfCJhsfMTv8NCtKU+FHGsUJJf1nDqlFyOPoJOdRO+IvmfiGvCBITgMIx0S39Kce3TmV3MBOE7Rs="
+  },
+  "frame": {
+    "version": "1",
+    "name": "B Zero X DeFi",
+    "iconUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",
+    "homeUrl": "https://dapp.bzerox.org/",
+    "imageUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",
+    "buttonTitle": "Launch DeFi",
+    "splashImageUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",
+    "splashBackgroundColor": "#000000",
+    "webhookUrl": "https://dapp.bzerox.org/api/webhook"
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "B Zero X DeFi",
+    "homeUrl": "https://dapp.bzerox.org",
+    "iconUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",
+    "splashImageUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",
+    "splashBackgroundColor": "#000000",
+    "webhookUrl": "https://dapp.bzerox.org/api/webhook",
+    "subtitle": "DeFi on Base",
+    "description": "B Zero X Token DeFi dApp - Swaps, Uniswap V4 positions staking, and Proof of Work Mining. Decentralized.",
+    "screenshotUrls": [
+      "https://dapp.bzerox.org/images/screenshot1.png",
+      "https://dapp.bzerox.org/images/screenshot2.png",
+      "https://dapp.bzerox.org/images/screenshot3.png"
+    ],
+    "primaryCategory": "finance",
+    "tags": ["defi", "swap", "staking", "uniswap", "base"],
+    "heroImageUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",
+    "tagline": "Swap, Stake, Earn",
+    "ogTitle": "B Zero X DeFi",
+    "ogDescription": "DeFi dApp with swaps, Uniswap V4 position staking and proof of work mining statistics.",
+    "ogImageUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",
+    "noindex": false
+  }
+}
