@@ -13,7 +13,7 @@
       "splashBackgroundColor": "#000000",                                       
       "webhookUrl": "https://dapp.bzerox.org/api/webhook",                      
       "subtitle": "DeFi on Base",                                               
-      "description": "B Zero X Token DeFi dApp - Swaps, Uniswap V4 positions staking, and Proof of Work Mining. 100% Decentralized.",                                        
+      "description": "B Zero X Token DeFi dApp - Swaps, Uniswap V4 positions staking, and Proof of Work Mining. Decentralized.",                                        
       "screenshotUrls": [                                                       
         "https://dapp.bzerox.org/images/screenshot1.png",                       
         "https://dapp.bzerox.org/images/screenshot2.png",                       
