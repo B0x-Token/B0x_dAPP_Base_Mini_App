@@ -120,7 +120,7 @@ export async function initializeDApp() {
 
         // Signal to Farcaster Mini App SDK that app is ready
         try {
-            const { sdk } = await import('https://esm.sh/@farcaster/miniapp-sdk@0.0.6');
+            const { sdk } = await import('@farcaster/miniapp-sdk');
             await sdk.actions.ready();
             console.log('✓ Farcaster Mini App SDK ready');
         } catch (farcasterError) {
