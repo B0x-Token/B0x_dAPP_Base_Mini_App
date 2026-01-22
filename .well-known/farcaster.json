@@ -4,17 +4,6 @@
     "payload": "eyJkb21haW4iOiJkYXBwLmJ6ZXJveC5vcmcifQ",
     "signature": "fLGTpX4jypo7kfCJhsfMTv8NCtKU+FHGsUJJf1nDqlFyOPoJOdRO+IvmfiGvCBITgMIx0S39Kce3TmV3MBOE7Rs="
   },
-  "frame": {
-    "version": "1",
-    "name": "B Zero X DeFi",
-    "iconUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",
-    "homeUrl": "https://dapp.bzerox.org/",
-    "imageUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",
-    "buttonTitle": "Launch DeFi",
-    "splashImageUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",
-    "splashBackgroundColor": "#000000",
-    "webhookUrl": "https://dapp.bzerox.org/api/webhook"
-  },
   "miniapp": {
     "version": "1",
     "name": "B Zero X DeFi",
