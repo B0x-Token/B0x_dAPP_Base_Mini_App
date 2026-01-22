@@ -13,8 +13,7 @@
       "splashBackgroundColor": "#000000",                                       
       "webhookUrl": "https://dapp.bzerox.org/api/webhook",                      
       "subtitle": "DeFi on Base",                                               
-      "description": "B Zero X Token DeFi dApp - Swaps, Uniswap V4 positions,   
-  staking rewards. 100% Decentralized.",                                        
+      "description": "B Zero X Token DeFi dApp - Swaps, Uniswap V4 positions staking, and Proof of Work Mining. 100% Decentralized.",                                        
       "screenshotUrls": [                                                       
         "https://dapp.bzerox.org/images/screenshot1.png",                       
         "https://dapp.bzerox.org/images/screenshot2.png",                       
@@ -25,8 +24,7 @@
       "heroImageUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",     
       "tagline": "Swap, Stake, Earn",                                           
       "ogTitle": "B Zero X DeFi",                                               
-      "ogDescription": "DeFi dApp with swaps, Uniswap V4 positions, and staking 
-  rewards.",                                                                    
+      "ogDescription": "DeFi dApp with swaps, Uniswap V4 position staking and proof of work mining statistics.",                                                                    
       "ogImageUrl": "https://dapp.bzerox.org/images/b0x_logo_square.png",       
       "noindex": false                                                          
     }                                                                           
