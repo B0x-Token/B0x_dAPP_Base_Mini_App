@@ -1230,7 +1230,8 @@ let epchCount;
                 console.log('==================');
 
                 // ✅ Check for invalid block range - this is unrecoverable
-                if (error && error.message === 'invalid block range params') {
+                if ((error && error.error && error.error.message === 'invalid block range params') ||
+                    (error && error.message && error.message.includes('invalid block range params'))) {
                     console.log('❌ Invalid block range detected - skipping this range entirely');
                     getLogs = false;
                     isGetLogsRunning = false;
