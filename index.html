@@ -55,6 +55,14 @@
     <script src="ethers.umd.min.js" defer></script>
     <script src="chart.min.js" defer></script>
 
+    <!-- Farcaster Mini App SDK -->
+    <script type="module">
+      import { sdk } from 'https://esm.sh/@farcaster/frame-sdk';
+
+      // Signal to the host app that the Mini App is ready
+      sdk.actions.ready();
+    </script>
+
     </head>
 <body>
     <!-- IPFS Verification Banner -->
