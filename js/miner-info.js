@@ -1229,7 +1229,6 @@ let epchCount;
                 console.log('Full error object:', JSON.stringify(error, Object.getOwnPropertyNames(error), 2));
                 console.log('==================');
 
-                // ✅ Check for invalid block range - this is unrecoverable
                 if ((error && error.error && error.error.message === 'invalid block range params') ||
                     (error && error.message && error.message.includes('invalid block range params'))) {
                     console.log('❌ Invalid block range detected - skipping this range entirely');
