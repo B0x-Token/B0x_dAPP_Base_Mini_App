@@ -475,6 +475,13 @@ let statsDataLoadedAt = 0; // Timestamp of last stats load
  * @param {string} tabName - Name of tab to switch to
  */
 export async function switchTab(tabName) {
+    
+    if (tabName == 'stats') {
+
+        // Always ensure stats-home is visible when switching to stats tab
+       await switchTab2('stats-home');
+
+    }
     console.log("called switchTab: ", tabName);
     // Store previous tab and update immediately to prevent race conditions
     const previousTab = PreviousTabName;
@@ -504,12 +511,6 @@ export async function switchTab(tabName) {
         selectedPage.classList.add('active');
     }
     
-    if (tabName == 'stats') {
-
-        // Always ensure stats-home is visible when switching to stats tab
-        switchTab2('stats-home');
-
-    }
         
 
     console.log("Switched to tab:", tabName);
@@ -560,11 +561,13 @@ export async function switchTab(tabName) {
         }, 100);
     }
     // Tab-specific data loading
-    if (tabName == 'stats') {
+    if (tabName == 'stats' || tabName == ' stats') {
 
+        // Always ensure stats-home is visible when switching to stats tab
+       await switchTab2('stats-home');
         // Only load data if coming from a different tab or 3 minutes have passed
         const statsStale = (Date.now() - statsDataLoadedAt) > 180000; // 3 minutes
-        if (previousTab != 'stats' && statsStale) {
+        if (previousTab != 'stats' || statsStale) {
             statsDataLoadedAt = Date.now();
             console.log("SwitchTab - Loading stats data");
 
@@ -726,7 +729,7 @@ export async function switchTabForStats() {
     }
 
     // Always ensure stats-home is visible when switching to stats tab
-    switchTab2('stats-home');
+    await switchTab2('stats-home');
 
     // Only load data if coming from a different tab
     if (previousTab != 'stats') {
@@ -778,7 +781,7 @@ export async function showStatsPageDirect(targetSubTab) {
     document.querySelector('.content').style.padding = '0px';
 
     // Show target sub-tab FIRST (before loading data to avoid jitter)
-    switchTab2(targetSubTab);
+   await switchTab2(targetSubTab);
 
     // Then load data in background
     if (previousTab != 'stats') {
@@ -837,7 +840,7 @@ export async function switchTab2(tabName) {
         loadData();
     } else if (tabName == 'rich-list') {
         loadData();
-    } else if ((tabName == 'stats-home' || tabName == 'stats-mining-calc') && (Date.now() - statsDataLoadedAt) > 180000) {
+    } else if ((tabName == 'stats-home' || tabName == 'stats-mining-calc') || (Date.now() - statsDataLoadedAt) > 180000) {
         // Load stats data when switching to tabs that need it (with 3 min cache)
         statsDataLoadedAt = Date.now();
         if (typeof window.getRewardStats === 'function') {
